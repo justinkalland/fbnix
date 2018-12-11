@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "mocha tests"
+    "test": "mocha tests --timeout 10000"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "minimist": "^1.2.0",
     "puppeteer": "^1.10.0"
   },
   "devDependencies": {
