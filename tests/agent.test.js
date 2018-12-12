@@ -33,10 +33,10 @@ describe('Fbnix', () => {
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
 
-      expect(post.linkHref)
+      expect(post.link.href)
         .to.equal('https://www.carmagazine.co.uk/features/car-culture/hot-wheels-model-toy-cars/')
 
-      expect(post.linkTitle)
+      expect(post.link.title)
         .to.equal('Hot Wheels at 50: a celebration of toy cars')
     })
 
@@ -51,10 +51,10 @@ describe('Fbnix', () => {
       expect(post.text)
         .to.equal('I am going to buy an XBOX just for this!')
 
-      expect(post.linkHref)
+      expect(post.link.href)
         .to.equal('https://www.onmsft.com/news/forza-motorsport-7-players-get-free-hot-wheels-cars-on-xbox-one-windows-10')
 
-      expect(post.linkTitle)
+      expect(post.link.title)
         .to.equal('Forza Motorsport 7 players get free Hot Wheels cars on Xbox One & Windows 10 | On MSFT')
     })
 
