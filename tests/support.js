@@ -5,15 +5,13 @@ const fs = require('fs')
 const crypto = require('crypto')
 const cheerio = require('cheerio')
 
-global.agent = null
+const agent = new Fbnix()
 
 const argv = parseArgs(process.argv.slice(2), {
   boolean: ['cache']
 })
 
 before(function () {
-  agent = new Fbnix()
-
   if (!argv['cache']) {
     return
   }
@@ -42,3 +40,7 @@ before(function () {
 after(() => {
   agent.close()
 })
+
+module.exports = {
+  agent
+}

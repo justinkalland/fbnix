@@ -1,10 +1,11 @@
 const expect = require('chai').expect
+const support = require('./support')
 
 describe('Fbnix', () => {
   it('fetches post IDs for a page', async () => {
     const pageId = 774371002900647
 
-    const postIds = await agent.getPagePostIds(pageId)
+    const postIds = await support.agent.getPagePostIds(pageId)
 
     expect(postIds)
       .to.be.a('array')
@@ -15,7 +16,7 @@ describe('Fbnix', () => {
     it('text post', async () => {
       const postId = 774371639567250
 
-      const post = await agent.getPost(postId)
+      const post = await support.agent.getPost(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
@@ -27,7 +28,7 @@ describe('Fbnix', () => {
     it('link post', async () => {
       const postId = 774377139566700
 
-      const post = await agent.getPost(postId)
+      const post = await support.agent.getPost(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
@@ -42,7 +43,7 @@ describe('Fbnix', () => {
     it('link post with text', async () => {
       const postId = 774938299510584
 
-      const post = await agent.getPost(postId)
+      const post = await support.agent.getPost(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
@@ -60,7 +61,7 @@ describe('Fbnix', () => {
     it('share post', async () => {
       const postId = 774949062842841
 
-      const post = await agent.getPost(postId)
+      const post = await support.agent.getPost(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
@@ -71,7 +72,7 @@ describe('Fbnix', () => {
     it('share post with text', async () => {
       const postId = 774949562842791
 
-      const post = await agent.getPost(postId)
+      const post = await support.agent.getPost(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
