@@ -11,15 +11,15 @@ const argv = parseArgs(process.argv.slice(2), {
   boolean: ['cache']
 })
 
-before(function() {
+before(function () {
   agent = new Fbnix()
 
-  if(!argv['cache']){
+  if (!argv['cache']) {
     return
   }
 
-  if (!fs.existsSync('tests/cache/')){
-    fs.mkdirSync('tests/cache/');
+  if (!fs.existsSync('tests/cache/')) {
+    fs.mkdirSync('tests/cache/')
   }
 
   const originalGetPage = agent._fetchPage

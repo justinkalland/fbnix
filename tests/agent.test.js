@@ -1,7 +1,6 @@
 const expect = require('chai').expect
 
 describe('Fbnix', () => {
-
   it('fetches post IDs for a page', async () => {
     const pageId = 774371002900647
 
