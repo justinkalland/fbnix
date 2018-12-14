@@ -100,6 +100,47 @@ describe('Fbnix', () => {
       // todo: what to do here?
     })
 
-    it('image post')
+    it('image post', async () => {
+      const postId = 774373759567038
+
+      const post = await support.agent.getPost(postId)
+
+      expect(post.id).to.equal(postId)
+      expect(+post.date).to.equal(1541691001000)
+
+      expect(post.name)
+        .to.equal('Billy\'s Collectibles')
+
+      expect(post.images).to.have.lengthOf(1)
+
+      post.images.forEach(url => {
+        expect(url).to.contain('https://')
+          .and.to.contain('.fbcdn.net')
+          .and.to.contain('.jpg')
+      })
+    })
+
+    it('multi image post', async () => {
+      const postId = 774372742900473
+
+      const post = await support.agent.getPost(postId)
+
+      expect(post.id).to.equal(postId)
+      expect(+post.date).to.equal(1541690852000)
+
+      expect(post.name)
+        .to.equal('Billy\'s Collectibles')
+
+      expect(post.text)
+        .to.equal('Check out these awesome collectibles!')
+
+      expect(post.images).to.have.lengthOf(4)
+
+      post.images.forEach(url => {
+        expect(url).to.contain('https://')
+          .and.to.contain('.fbcdn.net')
+          .and.to.contain('.jpg')
+      })
+    })
   })
 })
