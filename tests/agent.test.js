@@ -20,6 +20,8 @@ describe('Fbnix', () => {
 
       const post = await support.agent.getPost(postId)
 
+      expect(post.id).to.equal(postId)
+
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
 
@@ -31,6 +33,8 @@ describe('Fbnix', () => {
       const postId = 774377139566700
 
       const post = await support.agent.getPost(postId)
+
+      expect(post.id).to.equal(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
@@ -46,6 +50,8 @@ describe('Fbnix', () => {
       const postId = 774938299510584
 
       const post = await support.agent.getPost(postId)
+
+      expect(post.id).to.equal(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
@@ -65,6 +71,8 @@ describe('Fbnix', () => {
 
       const post = await support.agent.getPost(postId)
 
+      expect(post.id).to.equal(postId)
+
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
 
@@ -75,6 +83,8 @@ describe('Fbnix', () => {
       const postId = 774949562842791
 
       const post = await support.agent.getPost(postId)
+
+      expect(post.id).to.equal(postId)
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
