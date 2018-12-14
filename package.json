@@ -10,7 +10,8 @@
   "author": "Justin Kalland <justin@kalland.ch>",
   "license": "MIT",
   "scripts": {
-    "test": "nyc mocha tests --timeout 10000"
+    "test": "nyc mocha tests --timeout 10000",
+    "lint": "eslint . || true"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
