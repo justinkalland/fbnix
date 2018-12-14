@@ -1,7 +1,1 @@
-{
-  "extends": "standard",
-  "rules": {
-    "no-var": "error",
-    "prefer-const": "error"
-  }
-}
+{"extends": "jk"}
