@@ -20,3 +20,4 @@ package-lock.json
 
 # fbnix
 tests/cache/*
+.nyc_output/*
