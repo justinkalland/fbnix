@@ -1,6 +1,6 @@
 {
   "name": "fbnix",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Agent library for scraping Facebook",
   "repository": "github:justinkalland/fbnix",
   "homepage": "https://github.com/justinkalland/fbnix#readme",
@@ -8,7 +8,7 @@
     "url": "https://github.com/justinkalland/fbnix/issues"
   },
   "author": "Justin Kalland <justin@kalland.ch>",
-  "license" : "MIT",
+  "license": "MIT",
   "scripts": {
     "test": "mocha tests --timeout 10000"
   },
