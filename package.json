@@ -10,7 +10,7 @@
   "author": "Justin Kalland <justin@kalland.ch>",
   "license": "MIT",
   "scripts": {
-    "test": "nyc mocha tests --timeout 10000",
+    "test": "nyc mocha tests --timeout 10000 --exit",
     "lint": "eslint . || true"
   },
   "dependencies": {
