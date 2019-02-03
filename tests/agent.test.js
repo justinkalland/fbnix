@@ -1,8 +1,6 @@
 const expect = require('chai').expect
 const support = require('./support')
 
-// todo: add date check to each test
-
 describe('Fbnix', () => {
   it('fetches post IDs for a page', async () => {
     const pageId = 774371002900647
@@ -12,6 +10,16 @@ describe('Fbnix', () => {
     expect(postIds)
       .to.be.a('array')
       .and.to.have.lengthOf.above(5)
+  })
+
+  it('returns error on page not found', async () => {
+    // page doesn't exist
+    await expect(support.agent.getPagePostIds(123))
+      .to.be.rejectedWith('not found')
+
+    // graph id exists but isnt a page
+    await expect(support.agent.getPagePostIds(352940311570379))
+      .to.be.rejectedWith('not found')
   })
 
   describe('fetches', () => {

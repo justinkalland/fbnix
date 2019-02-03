@@ -4,6 +4,10 @@ const sinon = require('sinon')
 const fs = require('fs')
 const crypto = require('crypto')
 const cheerio = require('cheerio')
+const chai = require('chai')
+const chaiAsPromised = require('chai-as-promised')
+
+chai.use(chaiAsPromised)
 
 const agent = new Fbnix()
 
