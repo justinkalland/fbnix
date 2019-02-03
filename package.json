@@ -38,5 +38,10 @@
   },
   "eslintConfig": {
     "extends": "jk"
+  },
+  "nyc": {
+    "exclude": [
+      "tests/support.js"
+    ]
   }
 }
