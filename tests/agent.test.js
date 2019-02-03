@@ -104,7 +104,7 @@ describe('Fbnix', () => {
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
 
-      expect(post.test).to.equal(undefined)
+      expect(post.text).to.equal(undefined)
 
       // todo: what to do here?
     })
