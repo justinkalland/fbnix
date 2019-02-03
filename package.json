@@ -24,6 +24,7 @@
     "chai-as-promised": "^7.1.1",
     "chai-string": "^1.5.0",
     "eslint-config-jk": "^1.4.0",
+    "jest": "^24.0.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
     "sinon": "^7.1.1"
