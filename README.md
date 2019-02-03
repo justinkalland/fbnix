@@ -63,9 +63,9 @@ Running integration tests:
 npm test
 ```
 
-You can also run the integration tests with caching. This saves the DOM fetched from Facebook so subsequent test runs are faster.
+You can also run the integration tests with caching. This saves the DOM fetched from Facebook so subsequent test runs are faster. This doesn't provide code coverage.
 
 ```
-npm test -- --cache
+npm run test-cache
 ```
 *To reset the cache delete the `tests\cache\` folder*

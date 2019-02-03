@@ -11,6 +11,7 @@
   "license": "MIT",
   "scripts": {
     "test": "nyc mocha tests --timeout 10000 --exit",
+    "test-cache": "mocha tests --timeout 10000 --exit \"--cache=true\"",
     "lint": "eslint . || true"
   },
   "dependencies": {
