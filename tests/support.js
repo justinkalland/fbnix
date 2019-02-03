@@ -33,8 +33,17 @@ before(function () {
     try {
       $ = cheerio.load(fs.readFileSync(fileName))
     } catch (err) {
-      $ = await originalGetPage.call(agent, url)
-      fs.writeFileSync(fileName, $.html())
+      try {
+        $ = await originalGetPage.call(agent, url)
+        fs.writeFileSync(fileName, $.html())
+      } catch (err) {
+        fs.writeFileSync(fileName, `<span id="cached_error">${err.message}</span>`)
+        throw new Error(err.message)
+      }
+    }
+
+    if ($('#cached_error').length === 1) {
+      throw new Error($('#cached_error').text())
     }
 
     return $
