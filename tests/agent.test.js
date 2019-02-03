@@ -23,6 +23,16 @@ describe('Fbnix', () => {
   })
 
   describe('fetches', () => {
+    it('post not found', async () => {
+      // post doesn't exist
+      await expect(support.agent.getPost(56584930285769305832))
+        .to.be.rejectedWith('not found')
+
+      // either graph id isnt a post or is private
+      await expect(support.agent.getPost(1005422149655522))
+        .to.be.rejectedWith('not found')
+    })
+
     it('text post', async () => {
       const postId = 774371639567250
 
