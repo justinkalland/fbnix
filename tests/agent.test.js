@@ -46,6 +46,12 @@ describe('Fbnix', () => {
 
       expect(post.text)
         .to.equal('Here is the first post! Welcome!')
+
+      expect(post.images)
+        .to.equal(null)
+
+      expect(post.link)
+        .to.equal(null)
     })
 
     it('link post', async () => {
