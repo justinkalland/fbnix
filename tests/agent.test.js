@@ -10,6 +10,11 @@ describe('Fbnix', () => {
     expect(postIds)
       .to.be.a('array')
       .and.to.have.lengthOf.above(5)
+
+    postIds.forEach(id => {
+      expect(id).to.be.a('number')
+        .and.be.greaterThan(200000000000000)
+    })
   })
 
   it('returns error on page not found', async () => {
