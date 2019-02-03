@@ -48,10 +48,10 @@ describe('Fbnix', () => {
         .to.equal('Here is the first post! Welcome!')
 
       expect(post.images)
-        .to.equal(null)
+        .to.equal(undefined)
 
       expect(post.link)
-        .to.equal(null)
+        .to.equal(undefined)
     })
 
     it('link post', async () => {
@@ -103,6 +103,8 @@ describe('Fbnix', () => {
 
       expect(post.name)
         .to.equal('Billy\'s Collectibles')
+
+      expect(post.test).to.equal(undefined)
 
       // todo: what to do here?
     })
