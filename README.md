@@ -41,7 +41,7 @@ const Fbnix = require('fbnix')
 const agent = new Fbnix()
 
 agent.getPost(774371639567250).then(post => {
-  console.log('  Post by: ', post.name)
+  console.log('  Post by: ', post.by)
   console.log('Post date: ', post.date)
   console.log('Post text: ', post.text)
 })

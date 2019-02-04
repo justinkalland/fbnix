@@ -46,7 +46,7 @@ describe('Fbnix', () => {
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541690705000)
 
-      expect(post.name)
+      expect(post.by)
         .to.equal('Billy\'s Collectibles')
 
       expect(post.text)
@@ -67,7 +67,7 @@ describe('Fbnix', () => {
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541691456000)
 
-      expect(post.name)
+      expect(post.by)
         .to.equal('Billy\'s Collectibles')
 
       expect(post.link.href)
@@ -85,7 +85,7 @@ describe('Fbnix', () => {
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541776873000)
 
-      expect(post.name)
+      expect(post.by)
         .to.equal('Billy\'s Collectibles')
 
       expect(post.text)
@@ -106,7 +106,7 @@ describe('Fbnix', () => {
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541778513000)
 
-      expect(post.name)
+      expect(post.by)
         .to.equal('Billy\'s Collectibles')
 
       expect(post.text).to.equal(undefined)
@@ -122,7 +122,7 @@ describe('Fbnix', () => {
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541778612000)
 
-      expect(post.name)
+      expect(post.by)
         .to.equal('Billy\'s Collectibles')
 
       expect(post.text)
@@ -139,7 +139,7 @@ describe('Fbnix', () => {
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541691001000)
 
-      expect(post.name)
+      expect(post.by)
         .to.equal('Billy\'s Collectibles')
 
       expect(post.images).to.have.lengthOf(1)
@@ -159,7 +159,7 @@ describe('Fbnix', () => {
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541690852000)
 
-      expect(post.name)
+      expect(post.by)
         .to.equal('Billy\'s Collectibles')
 
       expect(post.text)
