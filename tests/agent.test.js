@@ -3,9 +3,9 @@ const support = require('./support')
 
 describe('Fbnix', () => {
   it('fetches post IDs for a page', async () => {
-    const pageId = 774371002900647
+    const groupOrPageId = 774371002900647
 
-    const postIds = await support.agent.getPagePostIds(pageId)
+    const postIds = await support.agent.getPostIds(groupOrPageId)
 
     expect(postIds)
       .to.be.a('array')
@@ -17,17 +17,32 @@ describe('Fbnix', () => {
     })
   })
 
-  it('returns error on page not found', async () => {
+  it('fetches post IDs for a group', async () => {
+    const groupOrPageId = 505507649588383
+
+    const postIds = await support.agent.getPostIds(groupOrPageId)
+
+    expect(postIds)
+      .to.be.a('array')
+      .and.to.have.lengthOf.above(5)
+
+    postIds.forEach(id => {
+      expect(id).to.be.a('number')
+        .and.be.greaterThan(200000000000000)
+    })
+  })
+
+  it('returns error on page/group not found', async () => {
     // page doesn't exist
-    await expect(support.agent.getPagePostIds(123))
+    await expect(support.agent.getPostIds(123))
       .to.be.rejectedWith('not found')
 
     // graph id exists but isnt a page
-    await expect(support.agent.getPagePostIds(352940311570379))
+    await expect(support.agent.getPostIds(352940311570379))
       .to.be.rejectedWith('not found')
   })
 
-  describe('fetches', () => {
+  describe('page posts', () => {
     it('post not found', async () => {
       // post doesn't exist
       await expect(support.agent.getPost(56584930285769305832))
@@ -172,6 +187,27 @@ describe('Fbnix', () => {
           .and.to.contain('.fbcdn.net')
           .and.to.contain('.jpg')
       })
+    })
+
+    it('returns toJSON', async () => {
+      const postId = 774371639567250
+
+      const post = await support.agent.getPost(postId)
+      const json = post.toJSON()
+
+      expect(json).to.be.an('object')
+
+      expect(json.by)
+        .to.equal('Billy\'s Collectibles')
+
+      expect(json.text)
+        .to.equal('Here is the first post! Welcome!')
+
+      expect(json.images)
+        .to.equal(undefined)
+
+      expect(json.link)
+        .to.equal(undefined)
     })
   })
 })
