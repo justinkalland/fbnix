@@ -60,6 +60,7 @@ describe('Fbnix', () => {
 
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541690705000)
+      expect(post.sharedId).to.equal(undefined)
 
       expect(post.by)
         .to.equal('Billy\'s Collectibles')
@@ -81,6 +82,7 @@ describe('Fbnix', () => {
 
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541691456000)
+      expect(post.sharedId).to.equal(undefined)
 
       expect(post.by)
         .to.equal('Billy\'s Collectibles')
@@ -99,6 +101,7 @@ describe('Fbnix', () => {
 
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541776873000)
+      expect(post.sharedId).to.equal(undefined)
 
       expect(post.by)
         .to.equal('Billy\'s Collectibles')
@@ -126,7 +129,7 @@ describe('Fbnix', () => {
 
       expect(post.text).to.equal(undefined)
 
-      // todo: what to do here?
+      expect(post.sharedId).to.equal(106707477005488)
     })
 
     it('share post with text', async () => {
@@ -143,7 +146,7 @@ describe('Fbnix', () => {
       expect(post.text)
         .to.equal('I am not sure if I should post to my page or wall.')
 
-      // todo: what to do here?
+      expect(post.sharedId).to.equal(109186700090899)
     })
 
     it('image post', async () => {
@@ -153,6 +156,7 @@ describe('Fbnix', () => {
 
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541691001000)
+      expect(post.sharedId).to.equal(undefined)
 
       expect(post.by)
         .to.equal('Billy\'s Collectibles')
@@ -173,6 +177,7 @@ describe('Fbnix', () => {
 
       expect(post.id).to.equal(postId)
       expect(+post.date).to.equal(1541690852000)
+      expect(post.sharedId).to.equal(undefined)
 
       expect(post.by)
         .to.equal('Billy\'s Collectibles')
@@ -196,6 +201,7 @@ describe('Fbnix', () => {
       const json = post.toJSON()
 
       expect(json).to.be.an('object')
+      expect(post.sharedId).to.equal(undefined)
 
       expect(json.by)
         .to.equal('Billy\'s Collectibles')
