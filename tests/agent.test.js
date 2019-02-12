@@ -32,12 +32,40 @@ describe('Fbnix', () => {
     })
   })
 
+  it('fetches the name of a page', async () => {
+    const pageId = 774371002900647
+    const name = await support.agent.getName(pageId)
+
+    expect(name).to.equal('Billy\'s Collectibles')
+  })
+
+  it('fetches the name of a group', async () => {
+    const pageId = 505507649588383
+    const name = await support.agent.getName(pageId)
+
+    expect(name).to.equal('Neil deGrasse Tyson')
+  })
+
+  it('returns error on fetching name page/group not found', async () => {
+    // page doesn't exist
+    await expect(support.agent.getName(123))
+      .to.be.rejectedWith('not found')
+
+    // graph id exists but isnt a page or group
+    await expect(support.agent.getName(100029987083896))
+      .to.be.rejectedWith('not found')
+  })
+
   it('returns error on page/group not found', async () => {
     // page doesn't exist
     await expect(support.agent.getPostIds(123))
       .to.be.rejectedWith('not found')
 
-    // graph id exists but isnt a page
+    // graph id exists but isnt a page or group
+    await expect(support.agent.getPostIds(100029987083896))
+      .to.be.rejectedWith('not found')
+
+    // closed group (not public)
     await expect(support.agent.getPostIds(352940311570379))
       .to.be.rejectedWith('not found')
   })
