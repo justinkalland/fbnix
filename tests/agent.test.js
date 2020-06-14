@@ -106,11 +106,11 @@ describe('Fbnix', () => {
         text: undefined,
         link: {
           href: 'https://www.carmagazine.co.uk/features/car-culture/hot-wheels-model-toy-cars/',
-          title: 'Hot Wheels at 50: a celebration of toy cars'
+          title: 'CAR magazine UK hails the golden anniversary of Hot Wheels toy cars'
         },
         time: '2018-11-08T15:37:36.000Z',
         images: [
-          'https://external-dfw5-1.xx.fbcdn.net/safe_image.php?d=AQD9q4SUKocrn99Y&w=540&h=282&url=https%3A%2F%2Fcar-images.bauersecure.com%2Fpagefiles%2F84980%2Fhot_wheels_00.jpg&cfs=1&upscale=1&fallback=news_d_placeholder_publisher&_nc_hash=AQCL2vV3gmQ22YXO'
+          'https://external-frt3-2.xx.fbcdn.net/safe_image.php?d=AQD9q4SUKocrn99Y&w=540&h=282&url=https%3A%2F%2Fcar-images.bauersecure.com%2Fpagefiles%2F84980%2Fhot_wheels_00.jpg&cfs=1&upscale=1&fallback=news_d_placeholder_publisher&_nc_hash=AQCL2vV3gmQ22YXO'
         ],
         event: undefined
       })
@@ -126,11 +126,11 @@ describe('Fbnix', () => {
         text: 'I am going to buy an XBOX just for this!',
         link: {
           href: 'https://www.onmsft.com/news/forza-motorsport-7-players-get-free-hot-wheels-cars-on-xbox-one-windows-10',
-          title: 'Forza Motorsport 7 players get free Hot Wheels cars on Xbox One & Windows 10 | On MSFT'
+          title: 'This year is the 50th anniversary of Hot Wheels, and to celebrate, Mattel and Microsoft are partnering to bring Hot Wheels themed cars to Forza Motorsport 7. Forza Horizon 3 also received a Hot Wheels expansion pack of its own, so it\'s nice to see something similar come to Motorsport 7. In addition....'
         },
         time: '2018-11-09T15:21:13.000Z',
         images: [
-          'https://external-dfw5-1.xx.fbcdn.net/safe_image.php?d=AQAOY3cudgm46Q1Y&w=540&h=282&url=https%3A%2F%2Fwww.onmsft.com%2Fwp-content%2Fuploads%2F2018%2F11%2FHot-Wheels-Bone-Shaker-Forza-Motorsports-7-1031x580.jpg&cfs=1&upscale=1&fallback=news_d_placeholder_publisher&_nc_hash=AQBQ2wLDL1lTZuBx'
+          'https://external-frt3-2.xx.fbcdn.net/safe_image.php?d=AQAOY3cudgm46Q1Y&w=540&h=282&url=https%3A%2F%2Fwww.onmsft.com%2Fwp-content%2Fuploads%2F2018%2F11%2FHot-Wheels-Bone-Shaker-Forza-Motorsports-7-1031x580.jpg&cfs=1&upscale=1&fallback=news_d_placeholder_publisher&_nc_hash=AQBQ2wLDL1lTZuBx'
         ],
         event: undefined
       })
@@ -177,7 +177,7 @@ describe('Fbnix', () => {
         link: undefined,
         time: '2018-11-08T15:30:01.000Z',
         images: [
-          'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-0/s526x296/45752118_774373766233704_3375132528380739584_n.jpg?_nc_cat=107&_nc_ht=scontent-dfw5-1.xx&oh=1a73be4021f0a7f4b71ad0dcc45a3d86&oe=5CF50612'
+          'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-0/s526x296/45613776_774373762900371_5654657438293426176_o.jpg?_nc_cat=105&_nc_sid=8024bb&_nc_oc=AQn86jiKzEV3M4IjbrQXWlH8s31JkIKPTE4Jp5hkrY0rFzOcQXDyac8b34bBvl1gNp4&_nc_ht=scontent-frx5-1.xx&_nc_tp=7&oh=f9dfb1af6e2341cee97c77b0c7c04db5&oe=5F0D662E'
         ],
         event: undefined
       })
@@ -194,10 +194,10 @@ describe('Fbnix', () => {
         link: undefined,
         time: '2018-11-08T15:27:32.000Z',
         images: [
-          'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/45494942_774372489567165_5172707475698221056_n.jpg?_nc_cat=105&_nc_ht=scontent-dfw5-1.xx&oh=e2997651ae2bb5a3a7a7a909ec227152&oe=5CF0932E',
-          'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/45763732_774372542900493_9109028393843687424_n.jpg?_nc_cat=101&_nc_ht=scontent-dfw5-1.xx&oh=331219e0a87a20fc6fef0e51a559509a&oe=5CB6DC26',
-          'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/45622105_774372509567163_5978916529859723264_n.jpg?_nc_cat=101&_nc_ht=scontent-dfw5-1.xx&oh=444f6e813f11bb373a75f88fc99647fe&oe=5CB77D40',
-          'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/45622100_774372559567158_3822025249919074304_n.jpg?_nc_cat=100&_nc_ht=scontent-dfw5-1.xx&oh=19716ba70bb130b18dca9ffc49a42662&oe=5CEE88B4'
+          'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/45494942_774372489567165_5172707475698221056_n.jpg?_nc_cat=105&_nc_sid=8024bb&_nc_oc=AQnQFJWFOIm4IypMosy8AOPVzJPjPLW6CKIgXUqCHeCNVZCtOeeOCqB5RXRZDqOtaBc&_nc_ht=scontent-frx5-1.xx&oh=c31f0278b77d45b8e7e6a9409688a949&oe=5F0CD0D2',
+          'https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-9/45763732_774372542900493_9109028393843687424_n.jpg?_nc_cat=101&_nc_sid=8024bb&_nc_oc=AQkDf6fB6gDECFCb0svVmeYxyGZMfK_TsjHol6EA9yB5EC3CVDFvR66_Ls9wy2tgxNA&_nc_ht=scontent-frt3-2.xx&oh=04e77549e4d86cf0e146643e6efe9920&oe=5F0B345A',
+          'https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-9/45622105_774372509567163_5978916529859723264_n.jpg?_nc_cat=101&_nc_sid=8024bb&_nc_oc=AQltDZMxSurCbbubpsn6rqFD9w6ktNq6ByGAgSLz1Mj6d_M8TnqDZRE6cDPmm6_xWeo&_nc_ht=scontent-frt3-2.xx&oh=e779cca71f58a35ab49d8078d6e83a94&oe=5F0A9340',
+          'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/45622100_774372559567158_3822025249919074304_n.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_oc=AQkzFqypJqXP4oSlC8Z2jIH7LvaqgWW4I9WvAlw-mDvNmM-wmHDIUqAev6JHmMdIB2k&_nc_ht=scontent-frx5-1.xx&oh=c7c0fb29f2805e3cd82c203b281f8a12&oe=5F0AE6CC'
         ],
         event: undefined
       })
@@ -214,7 +214,7 @@ describe('Fbnix', () => {
         link: undefined,
         time: '2022-11-11T15:33:00.000Z',
         images: [
-          'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-0/s526x296/45700303_774376702900077_2989510362883162112_n.jpg?_nc_cat=104&_nc_ht=scontent-dfw5-1.xx&oh=d75998f58a9f45d2789bbabc9bfac320&oe=5CF38311'
+          'https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/p526x296/45643927_774376706233410_1326532251738963968_o.jpg?_nc_cat=106&_nc_sid=b386c4&_nc_oc=AQkJoEyOzy6WZNtne81q6BbaWgWwqkkTV0V41e9vtTKnk84RBgLxOCUZEYVGD_xUS8U&_nc_ht=scontent-frt3-1.xx&_nc_tp=6&oh=a188f3bfbe7be3f546525db1f592e56c&oe=5F098669'
         ],
         event: {
           title: 'First Collectible Bash',
