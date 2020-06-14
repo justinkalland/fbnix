@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/justinkalland/fbnix/issues"
   },
-  "author": "Justin Kalland <justin@kalland.ch>",
+  "author": "Justin Kalland <justin@kalland.com>",
   "license": "MIT",
   "scripts": {
     "test": "nyc mocha tests --timeout 15000 --exit",
@@ -15,19 +15,18 @@
     "lint": "eslint . || true"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "minimist": "^1.2.0",
-    "puppeteer": "^1.10.0"
+    "cheerio": "^1.0.0-rc.3",
+    "minimist": "^1.2.5",
+    "puppeteer": "^3.3.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-string": "^1.5.0",
-    "eslint-config-jk": "^1.4.0",
-    "jest": "^24.0.0",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
-    "sinon": "^7.1.1"
+    "eslint-config-jk": "^1.6.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.2"
   },
   "husky": {
     "hooks": {
