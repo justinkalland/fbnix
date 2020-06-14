@@ -1,6 +1,6 @@
 {
   "name": "fbnix",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Agent library for scraping Facebook groups and pages in Node.js",
   "repository": "github:justinkalland/fbnix",
   "homepage": "https://github.com/justinkalland/fbnix#readme",
