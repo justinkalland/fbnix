@@ -12,14 +12,20 @@
   "scripts": {
     "test": "nyc mocha tests --timeout 15000 --exit",
     "test-cache": "mocha tests --timeout 15000 --exit \"--cache=true\"",
-    "lint": "eslint . || true"
+    "lint": "eslint . || true",
+    "prerelease": "git checkout master && git pull origin master && npm run validate",
+    "release": "standard-version",
+    "prepublishOnly": "npm run test"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "minimist": "^1.2.5",
-    "puppeteer": "^3.3.0"
+    "puppeteer": "^3.3.0",
+    "standard-version": "^8.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-string": "^1.5.0",
@@ -30,7 +36,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
