@@ -13,7 +13,7 @@
     "test": "nyc mocha tests --timeout 15000 --exit",
     "test-cache": "mocha tests --timeout 15000 --exit \"--cache=true\"",
     "lint": "eslint . || true",
-    "prerelease": "git checkout master && git pull origin master && npm run validate",
+    "prerelease": "git checkout master && git pull origin master && npm run lint",
     "release": "standard-version",
     "prepublishOnly": "npm run test"
   },
