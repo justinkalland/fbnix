@@ -16,7 +16,7 @@ const argv = parseArgs(process.argv.slice(2), {
 })
 
 before(function () {
-  if (!argv['cache']) {
+  if (!argv.cache) {
     return
   }
 
