@@ -21,7 +21,7 @@
     "cheerio": "^1.0.0-rc.3",
     "minimist": "^1.2.5",
     "puppeteer": "^5.0.0",
-    "standard-version": "^8.0.0"
+    "standard-version": "^9.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
